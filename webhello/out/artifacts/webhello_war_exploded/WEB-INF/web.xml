@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+
+    <servlet>
+    <servlet-name>boardListServlet</servlet-name>
+    <servlet-class>myboard.controller.BoardListServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>boardListServlet</servlet-name>
+        <url-pattern>/board/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardDetailServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardDetailServlet</servlet-name>
+        <url-pattern>/board/detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardInsertFormServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardInsertFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardInsertFormServlet</servlet-name>
+        <url-pattern>/board/insert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardSaveServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardSaveServlet</servlet-name>
+        <url-pattern>/board/save</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardDelServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardDelServlet</servlet-name>
+        <url-pattern>/board/del</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardUpdateServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardUpdateServlet</servlet-name>
+        <url-pattern>/board/updatesave</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardUpdateFormServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardUpdateFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardUpdateFormServlet</servlet-name>
+        <url-pattern>/board/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardLoginFormServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardLoginFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardLoginFormServlet</servlet-name>
+        <url-pattern>/board/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardLoginOkFormServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardLoginOkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardLoginOkFormServlet</servlet-name>
+        <url-pattern>/board/loginok</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>boardLoginOutServlet</servlet-name>
+        <servlet-class>myboard.controller.BoardLoginOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardLoginOutServlet</servlet-name>
+        <url-pattern>/board/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>helloServlet</servlet-name>
+        <servlet-class>hello.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+</web-app>
