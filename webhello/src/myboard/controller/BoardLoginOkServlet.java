@@ -59,12 +59,14 @@ public class BoardLoginOkServlet extends HttpServlet{
                 nuc = (Integer)context.getAttribute("nowUserCnt");
                 context.setAttribute("nowUserCnt", ++nuc);
             }
+
+            response.sendRedirect("/board/list");
+            return;
         }
 
 
         //2. jsp찾아서 이동
-        System.out.println("go list page");
-        RequestDispatcher view = request.getRequestDispatcher("/board/boardLoginOk.jsp");
-        view.forward(request, response);
+        response.sendRedirect("/board/login");
+        return;
     }
 }

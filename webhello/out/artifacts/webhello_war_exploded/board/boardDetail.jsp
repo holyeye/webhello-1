@@ -8,32 +8,28 @@
   </head>
   <body>
 
-  <%
-      Board tmpBoard = (Board)request.getAttribute("boards");
-  %>
-
    <table>
        <tr>
            <td>title</td>
-           <td><% out.write(tmpBoard.getTitle()); %></td>
+           <td>${boards.title}</td>
        </tr>
        <tr>
            <td>writer</td>
-           <td><% out.write(tmpBoard.getWriter()); %></td>
+           <td>${boards.writer}</td>
        </tr>
        <tr>
            <td>pw</td>
-           <td><% out.write(tmpBoard.getPw()); %></td>
+           <td>${boards.pw}</td>
        </tr>
        <tr>
            <td>content</td>
-           <td><% out.write(tmpBoard.getContent()); %></td>
+           <td>${boards.content}</td>
        </tr>
    </table>
 
   <input type="button" value="목록" onclick="goListForm()" />
-  <input type="button" value="삭제" onclick="goDelForm(<%=tmpBoard.getId()%>)" />
-  <input type="button" value="수정" onclick="goUpdateForm(<%=tmpBoard.getId()%>)" />
+  <input type="button" value="삭제" onclick="goDelForm(${boards.id})" />
+  <input type="button" value="수정" onclick="goUpdateForm(${boards.id})" />
   </body>
 </html>
 

@@ -8,28 +8,25 @@
   </head>
   <body>
 
-  <%
-      Board tmpBoard = (Board)request.getAttribute("boards");
-  %>
 
   <form name="updateformat" method="post" action="updatesave">
-      <input type="hidden" name="id" value="<%= request.getAttribute("tmpid") %>">
+      <input type="hidden" name="id" value="${boards.id}">
    <table>
        <tr>
            <td>title</td>
-           <td><input type="text" name="title" value="<% out.write(tmpBoard.getTitle()); %>"></td>
+           <td><input type="text" name="title" value="${boards.title}"></td>
        </tr>
        <tr>
            <td>writer</td>
-           <td><input type="text" name="writer" value="<% out.write(tmpBoard.getWriter()); %>"></td>
+           <td><input type="text" name="writer" value="${boards.writer}"></td>
        </tr>
        <tr>
            <td>pw</td>
-           <td><input type="text" name="pw" value="<% out.write(tmpBoard.getPw()); %>"></td>
+           <td><input type="text" name="pw" value="${boards.pw}"></td>
        </tr>
        <tr>
            <td>content</td>
-           <td><textarea rows="5" name="content" ><% out.write(tmpBoard.getContent()); %></textarea></td>
+           <td><textarea rows="5" name="content" >${boards.content}</textarea></td>
        </tr>
    </table>
   </form>

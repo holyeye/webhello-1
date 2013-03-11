@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
@@ -29,6 +30,13 @@ public class BoardListServlet extends HttpServlet{
         int nuc = 0 ;
         if (context.getAttribute("nowUserCnt") != null) {
             nuc = (Integer)context.getAttribute("nowUserCnt");
+        }
+
+        HttpSession session = request.getSession();
+        if (session.getAttribute("isLogin") == null) {
+            //response.encodeRedirectURL("/board/login");
+            response.sendRedirect("/board/login");
+            return;
         }
 
         //1. model에서 데이터 조회

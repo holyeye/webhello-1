@@ -25,7 +25,7 @@ public class BoardLoginOutServlet extends HttpServlet{
         session.invalidate();
 
         //2. jsp찾아서 이동
-        RequestDispatcher view = request.getRequestDispatcher("/board/boardSave.jsp");
-        view.forward(request, response);
+        response.sendRedirect("/board/list");
+        return;
     }
 }
