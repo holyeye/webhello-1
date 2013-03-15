@@ -34,10 +34,14 @@ public class BoardUpdateServlet extends HttpServlet{
 
 
         //1. model에서 데이터 저장
-        board.setTitle(new String(title.getBytes("8859_1"),"utf-8"));
-        board.setWriter(new String(writer.getBytes("8859_1"),"utf-8"));
-        board.setContent(new String(content.getBytes("8859_1"),"utf-8"));
-        board.setPw(new String(pw.getBytes("8859_1"),"utf-8"));
+//        board.setTitle(new String(title.getBytes("8859_1"),"utf-8"));
+//        board.setWriter(new String(writer.getBytes("8859_1"),"utf-8"));
+//        board.setContent(new String(content.getBytes("8859_1"),"utf-8"));
+//        board.setPw(new String(pw.getBytes("8859_1"),"utf-8"));
+        board.setTitle(title);
+        board.setContent(content);
+        board.setWriter(writer);
+        board.setPw(pw);
 
         System.out.println("update board = " + board);
 
