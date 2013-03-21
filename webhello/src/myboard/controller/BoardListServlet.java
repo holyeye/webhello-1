@@ -2,6 +2,7 @@ package myboard.controller;
 
 import hello.ResultModel;
 import myboard.entity.Board;
+import myboard.repository.BoardDatabaseRepository;
 import myboard.repository.BoardMemoryRepository;
 import myboard.repository.BoardRepository;
 
@@ -22,7 +23,7 @@ import java.util.List;
  */
 public class BoardListServlet extends HttpServlet{
 
-    BoardRepository boardRepository = BoardMemoryRepository.getInstance();
+    BoardRepository boardRepository = BoardDatabaseRepository.getInstance();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

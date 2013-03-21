@@ -1,6 +1,7 @@
 package myboard.controller;
 
 import myboard.entity.Board;
+import myboard.repository.BoardDatabaseRepository;
 import myboard.repository.BoardMemoryRepository;
 import myboard.repository.BoardRepository;
 
@@ -17,7 +18,7 @@ import java.io.IOException;
  */
 public class BoardSaveServlet extends HttpServlet{
 
-    BoardRepository boardRepository = BoardMemoryRepository.getInstance();
+    BoardRepository boardRepository = BoardDatabaseRepository.getInstance();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

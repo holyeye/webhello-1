@@ -2,6 +2,7 @@ package myboard.repository;
 
 import myboard.entity.Board;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
