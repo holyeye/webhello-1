@@ -18,4 +18,5 @@ public interface BoardRepository {
     void addBoard(Board board);
 
     void delBoard(int key);
+    void updateBoard(Board board);
 }

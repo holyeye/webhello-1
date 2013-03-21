@@ -26,8 +26,6 @@ public class BoardUpdateServlet extends HttpServlet{
         String tmpid = request.getParameter("id");
 
         //1. model에서 데이터 조회
-        Board board = (Board)boardRepository.searchBoard(Integer.parseInt(tmpid));
-
         String title = request.getParameter("title");
         String writer = request.getParameter("writer");
         String content = request.getParameter("content");
@@ -35,14 +33,13 @@ public class BoardUpdateServlet extends HttpServlet{
 
 
         //1. model에서 데이터 저장
-//        board.setTitle(new String(title.getBytes("8859_1"),"utf-8"));
-//        board.setWriter(new String(writer.getBytes("8859_1"),"utf-8"));
-//        board.setContent(new String(content.getBytes("8859_1"),"utf-8"));
-//        board.setPw(new String(pw.getBytes("8859_1"),"utf-8"));
+        Board board = new Board();
+        board.setId(Integer.parseInt(tmpid));
         board.setTitle(title);
-        board.setContent(content);
         board.setWriter(writer);
+        board.setContent(content);
         board.setPw(pw);
+        boardRepository.updateBoard(board);
 
         System.out.println("update board = " + board);
 

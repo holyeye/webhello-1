@@ -42,12 +42,12 @@ public class BoardDatabaseRepository implements BoardRepository {
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(BoardUrl, BoardUser, BoardPwd);
-            pstmt = conn.prepareStatement("SELECT id,title,writer,pw,content FROM ? ");
-            pstmt.setString(1,BoardTbl);
+            pstmt = conn.prepareStatement("SELECT id,title,writer,pw,content FROM "+BoardTbl);
             result = pstmt.executeQuery();
 
-            Board board = new Board();
+
             while(result.next()){
+                Board board = new Board();
                 board.setId(result.getInt("id"));
                 board.setTitle(result.getString("title"));
                 board.setWriter(result.getString("writer"));
@@ -82,12 +82,11 @@ public class BoardDatabaseRepository implements BoardRepository {
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(BoardUrl, BoardUser, BoardPwd);
-            pstmt = conn.prepareStatement("INSERT INTO ? (title,writer,pw,content) values (?,?,?,?)");
-            pstmt.setString(1,BoardTbl);
-            pstmt.setString(2,board.getTitle());
-            pstmt.setString(3,board.getWriter());
-            pstmt.setString(4,board.getPw());
-            pstmt.setString(5,board.getContent());
+            pstmt = conn.prepareStatement("INSERT INTO "+BoardTbl+" (title,writer,pw,content) values (?,?,?,?)");
+            pstmt.setString(1,board.getTitle());
+            pstmt.setString(2,board.getWriter());
+            pstmt.setString(3,board.getPw());
+            pstmt.setString(4,board.getContent());
             pstmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
@@ -115,20 +114,22 @@ public class BoardDatabaseRepository implements BoardRepository {
         Connection conn = null;
         ResultSet result = null;
         PreparedStatement pstmt = null;
-        Board RetBoard = new Board();
+        Board board = new Board();
 
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(BoardUrl, BoardUser, BoardPwd);
-            pstmt = conn.prepareStatement("SELECT title,writer,pw,content FROM ? WHERE id = ?");
-            pstmt.setString(1,BoardTbl);
-            pstmt.setInt(2, key);
+            pstmt = conn.prepareStatement("SELECT id,title,writer,pw,content FROM "+BoardTbl+" WHERE id = ?");
+            pstmt.setInt(1, key);
             result = pstmt.executeQuery();
 
-            RetBoard.setTitle(result.getString("title"));
-            RetBoard.setWriter(result.getString("writer"));
-            RetBoard.setPw(result.getString("pw"));
-            RetBoard.setContent(result.getString("content"));
+            while(result.next()){
+                board.setId(result.getInt("id"));
+                board.setTitle(result.getString("title"));
+                board.setWriter(result.getString("writer"));
+                board.setPw(result.getString("pw"));
+                board.setContent(result.getString("content"));
+            }
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (ClassNotFoundException e) {
@@ -143,7 +144,7 @@ public class BoardDatabaseRepository implements BoardRepository {
             }
         }
 
-        return RetBoard;
+        return board;
     }
 
     @Override
@@ -154,9 +155,39 @@ public class BoardDatabaseRepository implements BoardRepository {
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(BoardUrl, BoardUser, BoardPwd);
-            pstmt = conn.prepareStatement("DELETE FROM ? WHERE id = ?");
-            pstmt.setString(1,BoardTbl);
-            pstmt.setInt(2, key);
+            pstmt = conn.prepareStatement("DELETE FROM "+BoardTbl+" WHERE id = ?");
+            pstmt.setInt(1, key);
+            pstmt.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } finally {
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+            }
+        }
+    }
+
+    @Override
+    public void updateBoard(Board board) {
+
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            conn = DriverManager.getConnection(BoardUrl, BoardUser, BoardPwd);
+            pstmt = conn.prepareStatement("UPDATE "+BoardTbl+" set title=? ,writer=?,pw=?,content=? WHERE id=?");
+            pstmt.setString(1,board.getTitle());
+            pstmt.setString(2,board.getWriter());
+            pstmt.setString(3,board.getPw());
+            pstmt.setString(4,board.getContent());
+            pstmt.setInt(5,board.getId());
             pstmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.

@@ -9,10 +9,10 @@
     <file path="/web.xml" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363313210421" ignored="false" />
     <file path="/hello.jsp" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1361520535517" ignored="false" />
     <file path="/ResultModel.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1361520662812" ignored="false" />
-    <file path="/fragment.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829501237" ignored="false" />
+    <file path="/fragment.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363839268102" ignored="false" />
     <file path="/Board.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1361958250334" ignored="false" />
-    <file path="/BoardRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1362466849410" ignored="false" />
-    <file path="/BoardMemoryRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1362640004086" ignored="false" />
+    <file path="/BoardRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363841519300" ignored="false" />
+    <file path="/BoardMemoryRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363841810971" ignored="false" />
     <file path="/BoardListServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829547409" ignored="false" />
     <file path="/boardList.jsp" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1362994313513" ignored="false" />
     <file path="/a.dummy" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1361954520943" ignored="false" />
@@ -24,7 +24,7 @@
     <file path="/BoardDelServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829514284" ignored="false" />
     <file path="/boardUpdate.jsp" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1362994539405" ignored="false" />
     <file path="/BoardUpdateFormServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829594501" ignored="false" />
-    <file path="/BoardUpdateServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829599144" ignored="false" />
+    <file path="/BoardUpdateServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363841738336" ignored="false" />
     <file path="/boardLogin.jsp" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1362992912020" ignored="false" />
     <file path="/BoardLoginOkServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829580301" ignored="false" />
     <file path="/boardLoginOk.jsp" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1362634383919" ignored="false" />
@@ -33,8 +33,9 @@
     <file path="/BoardFilterCharset.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363312638477" ignored="false" />
     <file path="/BoardFilterLog.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363314398150" ignored="false" />
     <file path="/BoardWrapperReq.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363322434482" ignored="false" />
-    <file path="/BoardDatabaseRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363832377599" ignored="false" />
+    <file path="/BoardDatabaseRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363841628302" ignored="false" />
     <file path="/BoardInsertFormServlet.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363829565552" ignored="false" />
+    <file path="/BoardDBRepository.java" changelist="54ec3300-c9fd-496c-9610-c25232aaf6fc" time="1363839293710" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -88,7 +90,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -98,31 +99,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BoardDelServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardDelServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="29" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardDatabaseRepository.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BoardDatabaseRepository.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardDatabaseRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="29" selection-start="5637" selection-end="5637" vertical-scroll-proportion="0.4974227">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#657#664#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myboard/entity/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="52" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
+            <state line="176" column="4" selection-start="6281" selection-end="6319" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,7 +111,7 @@
       <file leaf-file-name="BoardRepository.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+            <state line="20" column="32" selection-start="353" selection-end="364" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,16 +120,34 @@
       <file leaf-file-name="BoardLoginOkServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardLoginOkServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+            <state line="19" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardMemoryRepository.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BoardDetailServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardDetailServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="80" selection-start="938" selection-end="961" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardMemoryRepository.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardMemoryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="424" selection-end="476" vertical-scroll-proportion="0.0">
+            <state line="75" column="8" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.88659793">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardSaveServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardSaveServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="42" selection-start="1081" selection-end="1272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,15 +157,6 @@
         <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardLoginOutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="61" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardSaveServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardSaveServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,7 +174,16 @@
       <file leaf-file-name="BoardUpdateServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardUpdateServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+            <state line="37" column="49" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardInsertFormServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardInsertFormServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="9" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,8 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/myboard/BoardFilterCharset.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/myboard/BoardFilterLog.java" />
         <option value="$PROJECT_DIR$/src/myboard/BoardWrapperReq.java" />
         <option value="$PROJECT_DIR$/src/myboard/controller/BoardDelServlet.java" />
@@ -217,9 +213,11 @@
         <option value="$PROJECT_DIR$/src/myboard/controller/BoardLoginOutServlet.java" />
         <option value="$PROJECT_DIR$/src/myboard/controller/BoardSaveServlet.java" />
         <option value="$PROJECT_DIR$/src/myboard/controller/BoardUpdateFormServlet.java" />
-        <option value="$PROJECT_DIR$/src/myboard/controller/BoardUpdateServlet.java" />
+        <option value="$PROJECT_DIR$/src/myboard/repository/BoardDBRepository.java" />
         <option value="$PROJECT_DIR$/src/myboard/repository/BoardRepository.java" />
         <option value="$PROJECT_DIR$/src/myboard/repository/BoardDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/myboard/controller/BoardUpdateServlet.java" />
+        <option value="$PROJECT_DIR$/src/myboard/repository/BoardMemoryRepository.java" />
       </list>
     </option>
   </component>
@@ -263,7 +261,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -459,6 +456,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -752,6 +750,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="54ec3300-c9fd-496c-9610-c25232aaf6fc" name="Default" comment="" />
@@ -761,7 +764,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="725" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -783,7 +786,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21474878" sideWeight="0.72561985" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27438018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27438018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -853,30 +856,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/myboard/BoardFilterLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="126" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myboard/BoardWrapperReq.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="127" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardDetailServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="61" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardInsertFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -895,34 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardLoginOutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardSaveServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardUpdateFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardUpdateServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardDelServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="29" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
@@ -937,34 +891,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardInsertFormServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+        <state line="25" column="9" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardUpdateFormServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="61" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardSaveServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="42" selection-start="1081" selection-end="1272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardLoginOutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="61" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardLoginOkServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+        <state line="19" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardMemoryRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardDetailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="424" selection-end="476" vertical-scroll-proportion="0.0">
+        <state line="28" column="80" selection-start="938" selection-end="961" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myboard/controller/BoardUpdateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="49" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="353" selection-end="364" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardDatabaseRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="29" selection-start="5637" selection-end="5637" vertical-scroll-proportion="0.4974227">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#657#664#0" expanded="true" />
-          </folding>
+        <state line="176" column="4" selection-start="6281" selection-end="6319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myboard/repository/BoardMemoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="8" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.88659793">
+          <folding />
         </state>
       </provider>
     </entry>

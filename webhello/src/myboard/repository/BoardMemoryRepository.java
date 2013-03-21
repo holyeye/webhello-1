@@ -72,6 +72,10 @@ public class BoardMemoryRepository implements BoardRepository {
         }
     }
 
+    public void updateBoard(Board board) {
+
+    }
+
     private synchronized int generateId() {
         return keyStore++;
     }
